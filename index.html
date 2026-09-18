@@ -8,7 +8,7 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,7 +19,7 @@
 <body>
 
     <!-- Cabeçalho -->
-    <header class="header">
+    <header id="inicio" class="header">
         <div class="logo-header-container">
             <img src="assets/images/logo iara games imagem+escrita ao lado sem fundo.png" alt="Logotipo Iara Games">
         </div>
@@ -63,110 +63,124 @@
 
     <!-- Destaques Informativos -->
     <section class="trust-bar">
-        <div class="item-trust-bar">
-            <img src="assets/images/joystick.png" alt="Ícone">
-            <span>Jogos Brasileiros</span>
-            <p>Descubra experiências incríveis</p>
+        <div id="item-trust-bar-1" class="item-trust-bar">
+            <img src="assets/images/controle-de-jogo.png" alt="Ícone de Joystick">
+
+            <div>
+                <h3>Jogos Brasileiros</h3>
+                <p>Descubra experiências incríveis</p>
+            </div>
         </div>
 
-        <div class="item-trust-bar">
-            <img src="assets/images/perfil-de-usuario (1).png" alt="Ícone">
-            <span>Comunidade Ativa</span>
-            <p>Conecte-se com quem joga e cria.</p>
+        <div id="item-trust-bar-2" class="item-trust-bar">
+            <img src="assets/images/grupo.png" alt="Ícone de usuário">
+
+            <div>
+                <h3>Comunidade Ativa</h3>
+                <p>Conecte-se com quem joga e cria.</p>
+            </div>
         </div>
 
-        <div class="item-trust-bar">
-            <img src="assets/images/sinais-de-codigo.png" alt="Ícone">
-            <span>Para Desenvolvedores</span>
-            <p>Divulgue seu jogo pelo mundo.</p>
+        <div id="item-trust-bar-3" class="item-trust-bar">
+            <img src="assets/images/sinais-de-codigo (1).png" alt="Ícone de código">
+            
+            <div>
+                <h3>Para Desenvolvedores</h3>
+                <p>Divulgue seu jogo pelo mundo.</p>
+            </div>
         </div>
 
-        <div class="item-trust-bar">
-            <img src="assets/images/quebra-cabeca.png" alt="Ícone">
-            <span>Mais que Jogos</span>
-            <p>Uma indústria mais forte juntos.</p>
+        <div id="item-trust-bar-4" class="item-trust-bar">
+            <img src="assets/images/contrato.png" alt="Ícone de quebra-cabeça em forma de lâmpada">
+            
+            <div>
+                <h3>Mais que Jogos</h3>
+                <p>Uma indústria mais forte juntos.</p>
+            </div>
         </div>
     </section>
     
     <!-- Gêneros -->
-    <section class="genres-section">
+    <section class="genres">
+        <h2>Gêneros</h2>
+
         <div class="genres-cards-container">
-            <div class="genres-card">
+            <div id="genres-card-1" class="genres-card">
                 <img src="assets/images/card-1.png" alt="Curupira">
-                <span class="title-genres-card">Ação</span>
+                <h3 class="title-genres-card">Ação</h3>
             </div>
-            <div class="genres-card">
+            <div id="genres-card-2" class="genres-card">
                 <img src="assets/images/card-2.png" alt="Saci">
-                <span class="title-genres-card">Plataforma</span>
+                <h3 class="title-genres-card">Plataforma</h3>
             </div>
-            <div class="genres-card">
+            <div id="genres-card-3" class="genres-card">
                 <img src="assets/images/card-3.png" alt="Iara">
-                <span class="title-genres-card">Aventura</span>
+                <h3 class="title-genres-card">Aventura</h3>
             </div>
+
+            <!--
             <div class="genres-card">
                 <img src="assets/images/card-4.png" alt="Mula-sem-cabeça">
-                <span class="title-genres-card">Corrida</span>
+                <h3 class="title-genres-card">Corrida</h3>
             </div>
             <div class="genres-card">
                 <img src="assets/images/card-5.png" alt="Boitatá">
-                <span class="title-genres-card">RPG</span>
+                <h3 class="title-genres-card">RPG</h3>
             </div>
             <div class="genres-card">
                 <img src="assets/images/card-6.png" alt="Cuca">
-                <span class="title-genres-card">Terror</span>
+                <h3 class="title-genres-card">Terror</h3>
             </div>
+            
             <div class="genres-card">
                 <img src="assets/images/card-7.png" alt="">
-                <span class="title-genres-card">Estratégia</span>
+                <h3 class="title-genres-card">Estratégia</h3>
             </div>
             <div class="genres-card">
                 <img src="assets/images/card-8.png" alt="Boto-cor-de-rosa">
-                <span class="title-genres-card">Luta</span>
+                <h3 class="title-genres-card">Luta</h3>
             </div>
+            -->
         </div>
     </section>
 
     <!--Iara Games League-->
     <section class="league">
-        <img src="assets/images/logo iara games league sem fundo.png" alt="Logo Iara Games League" style="width: 100px; height: 100px;">
-
-        <span>Programa de Recompensas</span>
-        <h6>Iara League</h6>
-        <p>Cadastre-se, compre jogos, indique a plataforma e promova os games brasileiros.
-            Quanto mais você participa, mais recompensas acumula.</p>
-        
-        <div class="league-benefits">
-            <div>
-                <img src="" alt="">
-                <p>Pontos a cada compra</p>
+        <div class="league-container">
+            <img src="assets/images/logo iara games league sem fundo.png" alt="Logo Iara Games League" >
+            
+            <span class="highlight">Programa de Recompensas</span>
+            <h1>Iara League</h1>
+            <p>Cadastre-se, compre jogos, indique a plataforma e promova os games brasileiros.
+                Quanto mais você participa, mais recompensas acumula.</p>
+                
+                <div class="league-benefits">
+                <ul>
+                    <li>Pontos a cada compra</li>
+                    <li>Recompensas exclusivas</li>
+                    <li>Indique e ganhe</li>
+                    <li>Benefícios para criadores</li>
+                </ul>
             </div>
-            <div>
-                <img src="" alt="">
-                <p>Recompensas exclusivas</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Indique e ganhe</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Benefícios para criadores</p>
-            </div>
+    
+            <button class="btn-league-cta">Participar Agora -></button>
+    
+            <p>Gratuito · comece a pontuar hoje</p>
         </div>
-
-        <button class="btn-league-cta">Participar Agora -></button>
-
-        <p>Gratuito · comece a pontuar hoje</p>
     </section>
     
     <!-- Rodapé -->
     <footer class="footer"> 
         <div class="footer-container">
-            <img src="assets/images/logo iara games imagem + escrita sem fundo.png" alt="Logo Iara Games" style="width: 100px;height: 100px;">
+            <a href="#inicio">
+                <img src="assets/images/logo iara games imagem + escrita sem fundo.png" alt="Logo Iara Games">
+            </a>
             
-            <span>O Game BR para mundo</span>
-            <p>Um ecossistema de descoberta e conexão para quem joga, 
-                cria e acredita na indústria brasilera de games.</p>
+            <div class="description-footer">
+                <h3>O Game BR para mundo</h3>
+                <p>Um ecossistema de descoberta e conexão para quem joga, 
+                    cria e acredita na indústria brasilera de games.</p>
+            </div>
             
             <div class="menu-footer">
                 <ul class="list-menu-footer">
@@ -187,7 +201,7 @@
         </div>
 
         <p>&copy; 2026 Iara Games. Todos os direitos reservados.</p>
-        <div> 
+        <div class="Acknowledgments"> 
             Ícones feitos por 
             <a href="https://www.flaticon.com/br/autores/inkubators" title="inkubators"> 
                 inkubators 

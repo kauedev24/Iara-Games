@@ -30,6 +30,25 @@ a {
     color: var(--cor-destaque);
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Sora", sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
 
 .highlight {
     color: var(--cor-destaque);
@@ -47,6 +66,7 @@ a {
 
 .logo-header-container img{
     width: 15rem;
+    cursor: pointer;
 }
 
 .list-menu-header {
@@ -105,10 +125,10 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .hero {
-    height: 75vh;
     display: flex;
     align-items: center;
     gap: 3rem;
+    margin: 10rem 0;
 }
 
 .text-hero, .img-hero {
@@ -133,7 +153,6 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 
     & > h1 {
-        font-size: 4rem;
         max-width: 49rem;
     }
 
@@ -169,11 +188,216 @@ input[type="search"]::-webkit-search-cancel-button {
 .trust-bar {
     background-color: var(--cor-destaque);
     width: 100%;
+    padding: 2.5rem 0;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 10rem 0;
 }
+
+.item-trust-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--background-color);
+}
+
+.item-trust-bar img {
+    width: 5rem;
+
+}
+
+.genres {
+    text-align: center;
+    margin: 10rem 0;
+
+    & > h2 {
+        margin: 5rem 0;
+    }
+
+}
+
+.genres-cards-container {
+    display: flex;
+    gap: 6.2rem;
+    justify-content: center;
+}
+
+.genres-card {
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    & > img {
+        width: 30rem;
+        border-radius: 1rem;
+    } 
+
+}
+
+.genres-card:hover {
+    transform: scale(1.1);
+
+}
+
+.title-genres-card {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.league {
+    padding: 10rem;
+}
+.league-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.15rem;
+    border: 1px solid var(--cor-principal);
+    padding: 10rem;
+    gap: 2rem;
+
+    & > img {
+        width: 20rem;
+    }
+
+    & > span {
+        font-size: 1.5rem;
+    }
+
+    & > p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+.league-benefits ul {
+    list-style: disc;
+
+    & > li {
+        margin-bottom: 1rem;
+    }
+}
+
+.btn-league-cta {
+    padding: 1.25rem 3.15rem 1.25rem 3.15rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: var(--cor-destaque);
+    border: 1px solid black;
+}
+
 
 /* Rodapé do Site */
 
 .footer {
     text-align: center;
+    background-color: #0B110E;
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    & > a {
+
+        & > img {
+            width: 25rem;
+
+        }
+    }
+}
+
+.menu-footer {
+    text-align: left;
+}
+
+.description-footer {
+    text-align: left;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item-list-menu-footer {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.15rem;
+}
+
+.item-list-menu-footer:hover {
+    color: var(--cor-destaque);
+}
+
+.list-social-midia {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.Acknowledgments {
+    padding-bottom: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .search-games-header {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    .text-hero {
+        width: 100%;
+        padding: 0 3.2rem;
+    }
+
+    .img-hero {
+        width: 90%;
+    }
+
+    .img-hero img {
+        width: 100%;
+        padding: 1rem;
+        text-align: center  ;
+    }
+
+    #item-trust-bar-1,
+    #item-trust-bar-2,
+    #item-trust-bar-3,
+    #genres-card-1,
+    #genres-card-3 {
+        display: none;
+    }
+
+    .league {
+        padding: 6.4rem 3.2rem;
+    }
+    .league-container {
+        width: 100%;
+        padding: 6.4rem 3.2rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+    }
 }
