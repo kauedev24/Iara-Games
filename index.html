@@ -1,12 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Título da página -->
     <title>Iara Games</title>
 </head>
 <body>
-    <h1>Iara Games</h1>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo-header-container">
+            <img src="assets/images/logo iara games imagem+escrita ao lado sem fundo.png" alt="Logotipo Iara Games">
+        </div>
+
+        <nav class="menu-header">
+            <ul class="list-menu-header">
+                <li class="item-list-menu-header"><a href="#">Loja</a></li>
+                <li class="item-list-menu-header"><a href="#">Fórum</a></li>
+                <li class="item-list-menu-header"><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+
+        <div class="actions-header">
+            <input type="search" placeholder="Buscar Jogos" class="search-games-header">
+
+            <img src="assets/images/perfil-de-usuario.png" alt="Ícone meu perfil">
+        </div>
+    </header>
+
+    <!-- Principal -->
+
+    <main class="hero">
+        <div class="text-hero">
+            <span>DESCUBRA. JOGUE. CONECTE-SE</span>
+            
+            <h1>O melhor dos games, com <span class="highlight">Alma Brasileira</span></h1>
+            <p> Curadoria especial de jogos nacionais e independentes, 
+                com pagamento local e conexão direta 
+                com a comunidade brasileira de devs indie.</p>
+
+            <div class="btn-hero-container">
+                <button class="btn-hero-cta">Explorar Jogos</button>
+                <button class="btn-hero-learn-more">Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="img-hero">
+            <img src="assets/images/hero-img.webp" alt="">
+        </div>
+    </main>
+
+    <!-- Destaques Informativos -->
+    <section class="trust-bar">
+        <div class="item-trust-bar">
+            <img src="assets/images/joystick.png" alt="Ícone">
+            <span>Jogos Brasileiros</span>
+            <p>Descubra experiências incríveis</p>
+        </div>
+
+        <div class="item-trust-bar">
+            <img src="assets/images/perfil-de-usuario (1).png" alt="Ícone">
+            <span>Comunidade Ativa</span>
+            <p>Conecte-se com quem joga e cria.</p>
+        </div>
+
+        <div class="item-trust-bar">
+            <img src="assets/images/sinais-de-codigo.png" alt="Ícone">
+            <span>Para Desenvolvedores</span>
+            <p>Divulgue seu jogo pelo mundo.</p>
+        </div>
+
+        <div class="item-trust-bar">
+            <img src="assets/images/quebra-cabeca.png" alt="Ícone">
+            <span>Mais que Jogos</span>
+            <p>Uma indústria mais forte juntos.</p>
+        </div>
+    </section>
+    
+    <!-- Gêneros -->
+    <section class="genres-section">
+        <div class="genres-cards-container">
+            <div class="genres-card">
+                <img src="assets/images/card-1.png" alt="Curupira">
+                <span class="title-genres-card">Ação</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-2.png" alt="Saci">
+                <span class="title-genres-card">Plataforma</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-3.png" alt="Iara">
+                <span class="title-genres-card">Aventura</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-4.png" alt="Mula-sem-cabeça">
+                <span class="title-genres-card">Corrida</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-5.png" alt="Boitatá">
+                <span class="title-genres-card">RPG</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-6.png" alt="Cuca">
+                <span class="title-genres-card">Terror</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-7.png" alt="">
+                <span class="title-genres-card">Estratégia</span>
+            </div>
+            <div class="genres-card">
+                <img src="assets/images/card-8.png" alt="Boto-cor-de-rosa">
+                <span class="title-genres-card">Luta</span>
+            </div>
+        </div>
+    </section>
+
+    <!--Iara Games League-->
+    <section class="league">
+        <img src="assets/images/logo iara games league sem fundo.png" alt="Logo Iara Games League" style="width: 100px; height: 100px;">
+
+        <span>Programa de Recompensas</span>
+        <h6>Iara League</h6>
+        <p>Cadastre-se, compre jogos, indique a plataforma e promova os games brasileiros.
+            Quanto mais você participa, mais recompensas acumula.</p>
+        
+        <div class="league-benefits">
+            <div>
+                <img src="" alt="">
+                <p>Pontos a cada compra</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>Recompensas exclusivas</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>Indique e ganhe</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>Benefícios para criadores</p>
+            </div>
+        </div>
+
+        <button class="btn-league-cta">Participar Agora -></button>
+
+        <p>Gratuito · comece a pontuar hoje</p>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer class="footer"> 
+        <div class="footer-container">
+            <img src="assets/images/logo iara games imagem + escrita sem fundo.png" alt="Logo Iara Games" style="width: 100px;height: 100px;">
+            
+            <span>O Game BR para mundo</span>
+            <p>Um ecossistema de descoberta e conexão para quem joga, 
+                cria e acredita na indústria brasilera de games.</p>
+            
+            <div class="menu-footer">
+                <ul class="list-menu-footer">
+                    <li class="item-list-menu-footer">Área do usuário</li>
+                    <li class="item-list-menu-footer">Loja</li>
+                    <li class="item-list-menu-footer">Fórum</li>
+                    <li class="item-list-menu-footer">Suporte</li>
+                </ul>
+            </div>
+
+            <div class="social-midia">
+                <ul class="list-social-midia">
+                    <li class="item-list-social-midia"><img src="assets/images/facebook.png" alt="Ícone do Facebook"></li>
+                    <li class="item-list-social-midia"><img src="assets/images/youtube.png" alt="Ícone do Youtube"></li>
+                    <li class="item-list-social-midia"><img src="assets/images/twitter-alt.png" alt="Ícone do X(antigo Twitter)"></li>
+                </ul>
+            </div>
+        </div>
+
+        <p>&copy; 2026 Iara Games. Todos os direitos reservados.</p>
+        <div> 
+            Ícones feitos por 
+            <a href="https://www.flaticon.com/br/autores/inkubators" title="inkubators"> 
+                inkubators 
+            </a> 
+            from 
+            <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">
+                www.flaticon.com
+            </a>
+        </div>
+    </footer>
+
 </body>
 </html>

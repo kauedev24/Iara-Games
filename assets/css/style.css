@@ -1,0 +1,179 @@
+:root {
+    --cor-principal: #f2f2f2;
+    --cor-destaque: #B8F500;
+    --background-color: #17201C;
+    --background-color-items: #1A453C;
+}
+
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* 62.5% de 16px = 10px */
+    background-color: var(--background-color);
+    color: var(--cor-principal);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-destaque);
+}
+
+
+.highlight {
+    color: var(--cor-destaque);
+}
+
+/* Cabeçalho */
+
+.header {
+    width: 100%;
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}   
+
+.logo-header-container img{
+    width: 15rem;
+}
+
+.list-menu-header {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.item-list-menu-header {
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 1.25rem;
+
+    & > a {
+        color: var(--cor-principal);
+        cursor: pointer;
+    }
+    
+    & > a:hover {
+        color: var(--cor-destaque);
+    }
+}
+
+.actions-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    & > img {
+        cursor: pointer;
+    }
+}
+
+.search-games-header {
+    background-color: #1A453C;
+    padding: 1rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    color: var(--cor-principal);
+    width: 150px;
+}
+
+.search-games-header::placeholder {
+    color: var(--cor-principal);
+    font-size: 0.95rem;
+}
+
+.search-games-header:focus {
+    border: 1px solid var(--cor-principal);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.hero {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.text-hero, .img-hero {
+    width: 50%;
+}
+
+.img-hero img {
+    width: 90%;
+    border-radius: 1rem;;
+}
+
+.text-hero {
+    padding: 0 0 0 10rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    & > span {
+        font-size: 1rem;
+        color: #05A696;
+        letter-spacing: 0.5rem;
+    }
+
+    & > h1 {
+        font-size: 4rem;
+        max-width: 49rem;
+    }
+
+    & > p {
+        font-size: 1.5rem;;
+    }
+}
+
+.btn-hero-container {
+    display: flex;
+    gap: 2rem;
+
+    & > button {
+        padding: 1.25rem 3.15rem 1.25rem 3.15rem;
+        border-radius: 5rem;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+}
+
+.btn-hero-cta {
+    background-color: var(--cor-destaque);
+    border: 1px solid black;
+}
+
+.btn-hero-learn-more {
+    background-color: #17201C;
+    border: 0.1rem solid var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+.trust-bar {
+    background-color: var(--cor-destaque);
+    width: 100%;
+    display: flex;
+}
+
+/* Rodapé do Site */
+
+.footer {
+    text-align: center;
+}
