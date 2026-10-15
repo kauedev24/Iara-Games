@@ -45,20 +45,26 @@
     
     <main class="store">
 
-        <h2 class="store-title">Loja de Jogos</h2>
-        <p class="store-description">
-            Explore produções brasileiras e descubra jogos que combinam com você.
-        </p>
+        <div class="store-description-container">
+            <h1 class="store-title">Loja de Jogos</h1>
+            <p class="store-description">
+                Explore produções brasileiras e descubra jogos que combinam com você.
+            </p>
+        </div>
 
         <div class="store-content">
             <aside class="store-filters">
-                <h3 class="store-filter-title">Filtros</h3>
+                <h2 class="store-filter-title">Filtros</h2>
 
                 <section class="store-filter-section">
-                    <h4 class="store-filter-title">Gênero</h4>
+                    <h3 class="store-filter-title">Gênero</h3>
 
                     <div class="store-filter-options">
-                        <!-- Opções de gênero-->
+                        <ul>
+                            <li><label><input type="checkbox"> Aventura</label></li>
+                            <li><label><input type="checkbox"> Ação</label></li>
+                            <li><label><input type="checkbox"> RPG</label></li>
+                        </ul>
                     </div>
                 </section>
 
@@ -66,7 +72,11 @@
                     <h4 class="store-filter-title">Acessibilidade</h4>
 
                     <div class="store-filter-options">
-                        <!-- Checkboxes de acessibilidade -->
+                        <ul>
+                            <li><label><input type="checkbox"> Legendas</label></li>
+                            <li><label><input type="checkbox"> Dublagem</label></li>
+                            <li><label><input type="checkbox"> Controle de dificuldade</label></li>
+                        </ul>
                     </div>
                 </section>
 
@@ -74,7 +84,11 @@
                     <h4 class="store-filter-title">Sustentabilidade</h4>
 
                     <div class="store-filter-options">
-                        <!-- Checkbox de sustentabilidade -->
+                        <ul>
+                            <li><label><input type="checkbox"> Produção local</label></li>
+                            <li><label><input type="checkbox"> Materiais recicláveis</label></li>
+                            <li><label><input type="checkbox"> Economia de energia</label></li>
+                        </ul>
                     </div>
                 </section>
             </aside>
@@ -83,9 +97,9 @@
                 <div class="store-toolbar">
                     <p class="store-sort-label">Ordenar por:</p>
 
-                    <div class="store-sort-options">
-                        <!-- Opções de ordenação -->
-                    </div>
+                    <button class="btn-store-sort" data-sort="price-desc">Mais comprados</button>
+                    <button class="btn-store-sort" data-sort="title-asc">A-Z</button>
+                    <button class="btn-store-sort" data-sort="title-desc">Melhor avaliados</button>
                 </div>
 
                 <div class="store-products">
