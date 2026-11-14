@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -19,25 +22,33 @@
 <body>
 
     <!-- Cabeçalho -->
-    <header id="inicio" class="header">
-        <div class="logo-header-container">
-            <img src="assets/images/logo iara games imagem+escrita ao lado sem fundo.png" alt="Logotipo Iara Games">
+    <header id="inicio" class="header container-fluid d-flex align-items-center justify-content-around">
+        <div class="align-items-center">
+            <div class="col-auto logo-header-container">
+                <a href="index.html">
+                    <img src="assets/images/logo iara games imagem+escrita ao lado sem fundo.png" alt="Logotipo Iara Games">
+                </a>
+            </div>
         </div>
 
-        <nav class="menu-header">
-            <ul class="list-menu-header">
-                <li class="item-list-menu-header"><a href="assets/pages/loja.html">Loja</a></li>
-                <li class="item-list-menu-header"><a href="assets/pages/forum.html">Fórum</a></li>
-                <li class="item-list-menu-header"><a href="assets/pages/suporte.html">Suporte</a></li>
-            </ul>
-        </nav>
+        <div class="col">
+            <nav class="menu-header">
+                <ul class="d-flex gap-11 justify-content-center align-items-center mb-0">
+                    <li class="item-list-menu-header"><a href="assets/pages/loja.html">Loja</a></li>
+                    <li class="item-list-menu-header"><a href="assets/pages/forum.html">Fórum</a></li>
+                    <li class="item-list-menu-header"><a href="assets/pages/suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <div class="actions-header">
-            <input type="search" placeholder="Buscar Jogos" class="search-games-header">
-
-            <a href="assets/pages/fazer_login.html">
-                <img src="assets/images/perfil-de-usuario.png" alt="Ícone meu perfil">
-            </a>
+        <div class="col-auto">
+            <div class="d-flex gap-11 align-items-center">
+                <input type="search" placeholder="Buscar Jogos" class="search-games-header">
+    
+                <a href="assets/pages/fazer_login.html">
+                    <img src="assets/images/perfil-de-usuario.png" alt="Ícone meu perfil">
+                </a>
+            </div>
         </div>
     </header>
 
